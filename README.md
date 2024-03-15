@@ -6,7 +6,7 @@
 * Cadastro de planos via formulário (POST);
 * Listagem dos planos (GET);
 * Editar os dados dos planos (PUT);
-* Deletar os planos;
+* Deletar os planos (DELETE);
 
 ### :pencil2: Diferenciais
 * Utilização de biblliotecas do NPM;
