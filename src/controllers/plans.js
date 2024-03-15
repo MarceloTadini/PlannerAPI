@@ -6,9 +6,9 @@ async function get(req, res) {
 
     const obj = id ? { _id: id } : {}
     
-    const products = await PlansModel.find(obj)
+    const plans = await PlansModel.find(obj)
 
-    res.send(products)
+    res.send(plans)
 }
 
 async function post(req, res) {
@@ -20,7 +20,7 @@ async function post(req, res) {
         participants
     } = req.body
 
-    const product = new PlansModel({
+    const plan = new PlansModel({
         title,
         description,
         location,
@@ -28,7 +28,7 @@ async function post(req, res) {
         participants
     })
 
-    product.save()
+    plan.save()
 
     res.send({
         message: 'success'
@@ -38,11 +38,11 @@ async function post(req, res) {
 async function put(req, res) {
     const {id} = req.params
 
-    const product = await PlansModel.findOneAndUpdate({_id: id}, req.body, {new: true})
+    const plan = await PlansModel.findOneAndUpdate({_id: id}, req.body, {new: true})
 
     res.send({
         message: 'success',
-        product
+        plan
     })
 }
 
