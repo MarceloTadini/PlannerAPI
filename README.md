@@ -22,7 +22,7 @@
 
 ## :rocket: Como executar 
 * Primeiramente, certifique-se de ter o MongoDB instalado em sua máquina.
-(Link para download)[https://www.mongodb.com/docs/manual/administration/install-community/]
+(https://www.mongodb.com/docs/manual/administration/install-community/)[Link para download]
 * Clone o repositório:
 ```` git clone https://github.com/MarceloTadini/PlannerAPI.git ````;
 * Entre na pasta raíz do projeto;
